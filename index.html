@@ -574,7 +574,94 @@
             </div>
         </div>
     </section>
-    
+
+
+<!-- 🌐 Website Switcher Sidebar -->
+<div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+<div id="sideMenu" class="side-menu">
+  <a href="javascript:void(0)" class="close-btn" onclick="toggleMenu()">×</a>
+  <h2>🌐 Switch Website</h2>
+  <a href="https://chandan375.github.io/Tools/">🏠 Wonder Tools (Main)</a>
+  <a href="https://chandan375.github.io/INSTA-Tools/">📸 Instagram Tools</a>
+  <a href="https://chandan375.github.io/YT-Tools/">▶️ YouTube Tools</a>
+</div>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById("sideMenu");
+  menu.classList.toggle("open");
+}
+</script>
+
+<style>
+/* 🔴 Hamburger Icon */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  position: fixed;
+  top: 12px;
+  left: 15px;
+  color: #ff4b4b;
+  z-index: 1100;
+  user-select: none;
+}
+
+/* 🧭 Sidebar Menu */
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.3s;
+  box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+  padding-top: 60px;
+  z-index: 1000;
+}
+
+/* When open */
+.side-menu.open {
+  width: 250px;
+}
+
+/* ❌ Close button */
+.side-menu .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  color: #ff4b4b;
+  text-decoration: none;
+}
+
+/* Menu items */
+.side-menu h2 {
+  margin-left: 20px;
+  color: #ff4b4b;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.side-menu a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #333;
+  display: block;
+  transition: 0.2s;
+}
+
+.side-menu a:hover {
+  background-color: #ff4b4b;
+  color: #fff;
+  border-radius: 5px;
+}
+</style>
+
+      
     <!-- Image Tools Section -->
     <section class="tools-section" id="tools">
         <div class="container">
